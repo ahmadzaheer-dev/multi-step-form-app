@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resources/Stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/d88c941f69.js" crossorigin="anonymous"></script>
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <section class="request-quote">
+        <h1 class="sectionHeading">Request a Quote</h1>
+        <div class="slider-wrapper">
+            <div class="center-content">
+                <ul class="bar">
+                    <li class="bar__step--completed" id="step-1">Service Selection</li>
+                    <li class="bar__step--active" id="step-2">Site Details</li>
+                    <li id="step-3">Contact Info</li>
+                </ul>
+            </div>
+            <form class="form" action="">
+                <div class="slide slide--checkbox">
+                        <div class="middle middle--fit">
+                            <label>
+                                <input type="radio" name="radio" checked/>
+                                <div class="front-end box">
+                                <span>Interior Design</span>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio"/>
+                                <div class="front-end box">
+                                <span>Exterior Design</span>
+                                </div>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio"/>
+                                <div class="back-end box">
+                                <span>House Planning</span>
+                                </div>
+                            </label>
+                        </div>
+                </div>
+                <div class="slide slide--inputs">
+                    <div class="middle middle--stretch">
+                        <input class="slide__input" type="text" placeholder="Site Dimentions">
+                        <input class="slide__input" type="number" placeholder="Total Area (In square feet)">
+                        <input class="slide__input" type="number" placeholder="Total Stories">   
+                        <p class="slide__text">Select the type of site: </p>
+                        <label class="slide__radio">
+                            <input type="radio" name="site-type">
+                            Commercial
+                        </label>
+                        <label class="slide__radio">
+                            <input type="radio" name="site-type">
+                            Residential
+                        </label>
+                    </div>
+                </div>
+                <div class="slide slide--inputs">
+                    <div class="middle middle--stretch">
+                        <input class="slide__input--half slide__input--left" type="text" placeholder="Full Name">
+                        <input class="slide__input--half slide__input--right" type="email" placeholder="Email Address">
+                        <input class="slide__input--half slide__input--left" type="text" placeholder="Residential Address">
+                        <input class="slide__input--half slide__input--right" type="tel" placeholder="Phone Number">
+                        <textarea class="slide__input slide__input--textarea" placeholder="Message" name="" id="" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+            </form>
+                <div class="btnContainer btnContainer--left">
+                    <button class="button button--previous" id="prev-btn">Back</button>
+                </div>
+                <div class="btnContainer btnContainer--right">
+                    <button class="button" id="next-btn">Next</button>
+                    <input id="send-btn" class="button" type="submit">
+                </div>
+        </div>
+        
+    </section>
+
+    <script src="./Resources/Scripts/script.js"></script>
+    
+</body>
+</html>
